@@ -1,0 +1,72 @@
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    min-height:100vh;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+    color:white;
+    background:#050816;
+}
+.background{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(-45deg,#ff00aa33,#00ffff33,#00ff8833,#ffff0033);
+    background-size:400% 400%;
+    animation:rgb 12s ease infinite;
+}
+@keyframes rgb{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:30px;
+    width:90%;
+    max-width:550px;
+}
+.avatar-ring{
+    width:190px;
+    height:190px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(45deg,#ff00ff,#00ffff,#00ff88,#ffff00,#ff00ff);
+    animation:spin 8s linear infinite;
+}
+@keyframes spin{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+.avatar{
+    width:175px;
+    height:175px;
+    border-radius:50%;
+    object-fit:cover;
+}
+h1{
+    margin-top:25px;
+    text-shadow:0 0 15px #00ffff;
+}
+p{
+    margin-top:20px;
+    font-size:20px;
+}
+.discord-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#5865F2;
+    color:white;
+    text-decoration:none;
+    border-radius:15px;
+}
