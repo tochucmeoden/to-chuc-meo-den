@@ -1,0 +1,1 @@
+const a=document.getElementById('bgm');function toggleMusic(){a.paused?a.play():a.pause()}
